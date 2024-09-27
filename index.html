@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">CALCULATOR</h1>
+    <table id="calcu"> 
+        <tr> 
+            <td colspan="4"> 
+                <input type="text" id="result" placeholder="0" readonly> 
+            </td> 
+            
+        </tr> 
+  
+        <tr> 
+            <td><input type="button" id="btn2" onclick="displayContent('(')" value="("></td> 
+            <td><input type="button" id="btn2" onclick="displayContent(')')" value=")"></td> 
+            <td><input type="button" id="btn2" onclick="calcScreenClear()" value="AC"></td> 
+            <td><input type="button" id="btn" onclick="displayContent('/')" value="&divide"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" id="numbutton" onclick="displayContent('9')" value="9"></td> 
+            <td><input type="button" id="numbutton" onclick="displayContent('8')"  value="8"></td> 
+            <td><input type="button" id="numbutton" onclick="displayContent('7')"  value="7"></td> 
+            <td><input type="button" id="btn" onclick="displayContent('*')" value="&#215"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" id="numbutton" onclick="displayContent('6')" value="6"></td> 
+            <td><input type="button" id="numbutton" onclick="displayContent('5')" value="5"></td> 
+            <td><input type="button" id="numbutton" onclick="displayContent('4')" value="4"></td> 
+            <td><input type="button" id="btn" onclick="displayContent('-')" value="-"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" id="numbutton" onclick="displayContent('3')" value="3"></td> 
+            <td><input type="button" id="numbutton" onclick="displayContent('2')" value="2"></td> 
+            <td><input type="button" id="numbutton" onclick="displayContent('1')" value="1"></td> 
+            <td><input type="button" id="btn" onclick="displayContent('+')" value="+"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" id="numbutton"onclick="displayContent('0')" value="0"></td> 
+            <td><input type="button" id="btn2" onclick="displayContent('.')" value="."></td> 
+            <td><input type="button" id="btn2" id="del" onclick="removeLastDigit()" value="C"></td> 
+            <td><input type="button" id="btn" onclick="calcOutput()" value="="></td> 
+        </tr> 
+    </table> 
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
